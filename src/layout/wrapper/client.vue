@@ -5,6 +5,7 @@
             <router-view></router-view>
         </div>
         <BotClient></BotClient>
+        <chat-widget></chat-widget>
     </div>
 </template>
 

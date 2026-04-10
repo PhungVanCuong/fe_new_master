@@ -6,6 +6,9 @@ import Client from './layout/wrapper/client.vue'
 import Blank from './layout/wrapper/master_blank.vue'
 import { Toaster } from "@meforma/vue-toaster";
 
+// Import Chat Widget
+import ChatWidget from './components/Client/ChatAI/index.vue'
+
 const app = createApp(App)
 
 app.use(router)
@@ -15,5 +18,8 @@ app.use(Toaster, {
 app.component("default-layout", Default);
 app.component("client-layout", Client);
 app.component("blank-layout", Blank);
+
+// Đăng ký component toàn cục
+app.component('chat-widget', ChatWidget);
 
 app.mount("#app")
